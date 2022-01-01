@@ -1,0 +1,4 @@
+phrase = input()
+wordList = phrase.split(" ")
+for word in wordList:
+    print(word[::-1], end=' ')
