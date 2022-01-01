@@ -1,0 +1,9 @@
+num = input()
+orinum = num
+bnum = bin(int(num)).replace("0b", "")
+
+if orinum == orinum[::-1] and bnum == bnum[::-1] :
+    print("Yes")
+else:
+    print("No")
+
