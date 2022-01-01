@@ -1,0 +1,33 @@
+/* Given an integer N which has odd number of digits, find whether the given number is a balanced or not.
+
+An odd digit number is called a balanced number if the sum of all digits to the left of the middle digit and the sum of all digits to the right of the middle digit is equal.
+
+Input Format
+
+Input an integer.
+
+Constraints
+
+1<= N <= 10^100 N will always be odd.
+
+Output Format
+
+Print "1" if it is balanced and "0" if it is not. */
+
+    // CODE //
+    
+num = input()
+len = len(num)
+midAt = (len+1)//2
+leftDigits = num[:midAt-1]
+rightDigits = num[midAt:]
+leftSum = 0
+rightSum = 0
+for digit in str(leftDigits): 
+      leftSum += int(digit)
+for digit in str(rightDigits): 
+      rightSum += int(digit)
+if leftSum == rightSum :
+    print("1")
+else:
+    print("0")
