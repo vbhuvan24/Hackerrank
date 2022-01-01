@@ -1,0 +1,25 @@
+/* You are given an integer N. You need to convert all zeroes of N to 5.
+
+Input Format
+
+Input an integer.
+
+Constraints
+
+1<=N<=10^3
+
+Output Format
+
+Print new integer.
+
+Sample Input 0
+
+1005
+Sample Output 0
+
+1555 */
+
+    //CODE//
+    
+num=input()
+print(num.replace("0","5"))
