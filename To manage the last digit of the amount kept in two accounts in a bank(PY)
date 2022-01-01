@@ -1,0 +1,5 @@
+a,b = map(str,input().split())
+if(a[len(a)-1]==b[len(b)-1]):
+    print(True)
+else:
+    print(False)
