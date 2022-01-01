@@ -1,0 +1,37 @@
+/* Given a number N find whether its a happy number or not. A number is called happy if it leads to 1 after a sequence of steps wherein each step, the number is replaced by the sum of squares of its digit that is if we start with Happy Number and keep replacing it with digits square sum, we reach 1. Print "1" if it is a happy number and "0" if it's not.
+
+Input Format
+
+Input an integer.
+
+Constraints
+
+1<=N<=10^4
+
+Output Format
+
+Print "1" or "0"
+
+Sample Input 0
+
+19
+Sample Output 0
+
+1 */
+
+    //CODE//
+   
+num = input()
+while int(num)!=1:
+    count = len(num)
+    sum = 0
+    for digit in num:
+        sum += pow(int(digit), 2)
+    if sum == 1:
+        print("1")
+        exit()
+    if sum == 4:
+        print("0")
+        exit()
+    num = str(sum)
+print("0")
