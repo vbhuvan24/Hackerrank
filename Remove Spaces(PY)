@@ -1,0 +1,6 @@
+string = input()
+strList = string.split(" ")
+
+for str in strList:
+    if len(str) != 0 :
+        print(str, end=' ')
