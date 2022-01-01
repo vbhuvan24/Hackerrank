@@ -1,0 +1,21 @@
+/* Given a number N, write a program to find a maximum number that can be formed using all of the digits of this number. Note: The given number can be very large, so the input is taken as a String.
+
+Input Format
+
+Input a string.
+
+Constraints
+
+1 <= |N| <= 10^5 */
+
+    //CODE//
+
+num = input()
+digitList = []
+for digit in num:
+    digitList.append(int(digit))
+sortedDigitList = sorted(digitList)
+revSortedNum = ""
+for digit in sortedDigitList:
+    revSortedNum += str(digit)
+print(revSortedNum[::-1])
