@@ -1,0 +1,41 @@
+/* Given a number N, find an integer denoting the smallest number evenly divisible by each number from 1 to n.
+
+Input Format
+
+Input an Integer.
+
+Constraints
+
+1<=N<=10^3
+
+Output Format
+
+Print an integer.
+
+Sample Input 0
+
+3
+Sample Output 0
+
+6
+Explanation 0
+
+6 is the smallest number divisible by 1,2,3. */
+
+      //CODE//
+      
+def compute_lcm(n):
+    greater = n
+
+    while(True):
+        flag = 1
+        for i in range(1, n+1):
+            if greater%i != 0 :
+                flag = 0
+                break
+        if flag == 0:
+            greater += 1
+        else:
+            return greater
+n = int(input())
+print(compute_lcm(n))      
