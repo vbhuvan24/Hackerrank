@@ -1,0 +1,32 @@
+/* You are given four numbers num1, den1, num2, and den2. You need to find (num1/den1)+(num2/den2) and output the result in the form of (numx/denx).
+
+Input Format
+
+Input 4 integer that will be num1 , den1, num2 , den2.
+
+Constraints
+
+1 <= den1,den2,num1,num2 <= 1000
+
+Output Format
+
+Output will be the fraction in the form a/b where the fraction denotes the sum of the two given fractions in reduced form.
+
+Sample Input 0
+
+1 500 2 500
+Sample Output 0
+
+3/500 */
+
+    //CODE//
+    
+from math import gcd
+def reduceFraction(x, y) :
+    d = gcd(x, y)
+    x = x // d
+    y = y // d
+    print(str(x)+"/"+str(y))
+
+num1, den1, num2, den2 = map(int, input().split())
+reduceFraction(((num1*den2)+(num2*den1)),(den1*den2))    
