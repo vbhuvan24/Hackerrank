@@ -1,0 +1,41 @@
+/* An enemy spy has poisoned one out of N sweets in a bakery. Even a bite of the poisoned sweet has potency to kill. However, the effects of the poison show only in 30 days. The managers asks the jailor to identify the poisoned sweet within 30 days. What is the least number of prisoners the jailor must employ to identify the poisoned sweet? Note: A sweet can be eaten by any number of prisoners.
+
+Input Format
+
+Input an integer.
+
+Constraints
+
+1<=N<=10^2
+
+Output Format
+
+Print an integer.
+
+Sample Input 0
+
+3
+Sample Output 0
+
+2
+Explanation 0
+
+The poison can be identified using only 2 prisoners. */
+
+    //CODE//
+    
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int a;
+    
+    scanf("%d",&a);
+    a=a-1;
+    printf("%d",a);
+    
+    return 0;
+}    
